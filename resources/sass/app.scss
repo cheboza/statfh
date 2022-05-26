@@ -1,0 +1,153 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.content{
+    display: flex;
+    flex-flow: row;
+    nav {
+        width: 250px;
+        min-width: 250px;
+        padding: 20px;
+        text-align: center;
+    }
+    &_stat {
+        flex-grow: 1;
+        &Filter{
+            width: 30%;
+            margin: 21px 20px;
+        }
+        &_goodsFilter {
+            display: flex;
+            margin-bottom: 30px;
+            >div {
+                width: 320px;
+                margin-left: 20px;
+            }
+            select{
+                width: 300px;
+                max-height: 70px;
+            }
+            >div:last-child.goodsFilter_buttonSearch{
+                display: flex;
+                align-items: center;
+            }
+
+        }
+    }
+}
+.search-modal-body{
+    min-height: 500px;
+}
+/* Модальное окно поиска товаров для статистики */
+#searchModal_content .searchedUnit{
+    display: flex;
+    margin-bottom: 10px;
+    .searchedUnit_image{
+        width: 25%;
+        padding: 5px;
+        img{
+            max-height: 50px;
+            max-width: 100px;
+        }
+    }
+    .searchedUnit_name{
+        width: 60%;
+        line-height: 1.2;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .searchedUnit_button{
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        button{
+            line-height: 1.3;
+        }
+    }
+}
+#content_statChart{
+    min-height: 600px;
+}
+/* Список товаров для статистики */
+#content_statGoods{
+    margin-top: 40px;
+    h4{
+        margin: 0 20px 20px 0;
+    }
+}
+#content_statGoods .searchedUnit {
+    display: flex;
+    margin-bottom: 10px;
+    width: 700px;
+    .searchedUnit_image{
+        width: 15%;
+        padding: 5px;
+        img{
+            max-height: 50px;
+            max-width: 100px;
+        }
+    }
+    .searchedUnit_name{
+        width: 75%;
+        line-height: 1.2;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .searchedUnit_button{
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        button{
+            line-height: 1.3;
+        }
+    }
+}
