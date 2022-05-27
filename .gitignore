@@ -6,10 +6,10 @@
 .idea
 .env
 .env.backup
-.env.example
-.editorconfig
+#.env.example
+#.editorconfig
 .phpunit.result.cache
-.styleci.yml
+#.styleci.yml
 Homestead.json
 Homestead.yaml
 npm-debug.log
